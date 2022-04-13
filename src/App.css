@@ -1,0 +1,127 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/fondo.png');
+    background-size: cover;
+    height: 100vh;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    text-align: end;
+    height: 100px;
+    padding: 20px;
+    background-color:rgba(229, 228, 249, 0.65);
+    border-radius: 20px;
+    -webkit-text-stroke: 1px black;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.score .win{
+    color: #7fad71;
+    font-weight: 500;
+}
+.score .lose{
+    color: #ce372b;
+    font-weight: 500;
+}
+.card{
+    width: 70%;
+    max-width: 900px;
+    height: 70%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    padding: 10px;
+}
+.card-normal{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+}
+.card-win{
+    box-shadow: rgba(127, 173, 113, 0.35) 0px 5px 15px;
+    background-color: rgba(127, 173, 113, 0.35);
+    color: #7fad71;
+}
+.card-lose{
+    box-shadow: rgba(206, 55, 43, 0.35) 0px 5px 15px;
+    background-color: rgba(206, 55, 43, 0.35);
+    color: #ce372b;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    width: 100%;
+}
+.card-title h2{
+    text-align: center;
+}
+
+.card-image{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img{
+    height: 100%;
+    width: auto;
+    
+}
+.img-hidden{
+    filter: brightness(0%);
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    flex: 2;
+    width: 75%;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .app{
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    .score{
+        
+        font-size: 16px;
+        align-self: center;
+        position: relative;
+    }
+    .card-title h2{
+        font-size: 22px;
+        word-wrap: break-word;
+        
+    }
+    .nes-field{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+    
+}
